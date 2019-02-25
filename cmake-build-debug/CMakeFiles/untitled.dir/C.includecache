@@ -9,8 +9,8 @@
 D:/Kuliah/PRMetnum/SecantMethod/main.c
 stdio.h
 -
-tgmath.h
--
 math.h
+-
+time.h
 -
 
