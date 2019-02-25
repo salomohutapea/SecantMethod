@@ -9,14 +9,8 @@ float f(float x)
 
 float main()
 {
-    float a, b, c, e, rae;
+    float a = 10, b = 8, c, e = 0.01, rae;
     int itr=1;
-
-    printf("\n\nEnter X0 and X1:\n");
-    scanf("%f%f",&a,&b);
-
-    printf("Enter allowed RAE:\n");
-    scanf("%f",&e);
 
     do
     {
