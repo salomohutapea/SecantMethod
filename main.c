@@ -19,7 +19,7 @@ float main()
         b=c;
         rae = fabs((b - a) / b);
         printf("\nIteration no-%d    x = %f\n",itr,c);
-        printf("RAE pada iterasi ke-%d is %f", itr, rae);
+        printf("RAE in iteration no-%d is %f", itr, rae);
         itr++;
         printf("\n");
     } while(rae > e);
