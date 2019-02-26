@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <time.h>
 
 double f(double x)
 {
@@ -8,7 +9,7 @@ double f(double x)
 
 main()
 {
-
+    clock_t start = clock();
     double a = 10, b = 8, c, e = 0.01, rae;
     int itr=1;
 
@@ -26,5 +27,8 @@ main()
 
     printf("\nAfter %d iterations, root = %f\n",itr-1,c);
 
+    clock_t stop = clock();
+    double elapsed = (double) (stop - start) / CLOCKS_PER_SEC;
+    printf("\nTime elapsed: %.8f\n", elapsed);
     return 0;
 }
