@@ -10,13 +10,14 @@ double f(double x)
 main()
 {
     clock_t start = clock();
+
     double a = 10, b = 8, c, e = 0.01, rae;
     int itr=0;
 
     do
     {
-        c=(a*f(b)-b*f(a))/(f(b)-f(a));
-        rae = fabs((b - a) / b);
+        c=(a*f(b)-b*f(a))/(f(b)-f(a)); // Secant Method formula
+        rae = fabs((b - a) / b); // relative error formula
         printf("\nIteration no-%d    x = %f    f(x) = %f\n",itr,b, f(b));
         printf("RAE in iteration no-%d is %f\n", itr, rae);
         a=b;
