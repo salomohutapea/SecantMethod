@@ -11,7 +11,7 @@ main()
 {
     clock_t start = clock();
     double a = 10, b = 8, c, e = 0.01, rae;
-    int itr=1;
+    int itr=0;
 
     do
     {
