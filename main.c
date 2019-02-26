@@ -16,11 +16,11 @@ main()
     do
     {
         c=(a*f(b)-b*f(a))/(f(b)-f(a));
+        rae = fabs((b - a) / b);
+        printf("\nIteration no-%d    x = %f    f(x) = %f\n",itr,b, f(b));
+        printf("RAE in iteration no-%d is %f\n", itr, rae);
         a=b;
         b=c;
-        rae = fabs((b - a) / b);
-        printf("\nIteration no-%d    x = %f    f(x) = %f\n",itr,c, f(c));
-        printf("RAE in iteration no-%d is %f\n", itr, rae);
         itr++;
     } while(rae > e);
 
