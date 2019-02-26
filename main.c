@@ -20,9 +20,8 @@ main()
         b=c;
         rae = fabs((b - a) / b);
         printf("\nIteration no-%d    x = %f    f(x) = %f\n",itr,c, f(c));
-        printf("RAE in iteration no-%d is %f", itr, rae);
+        printf("RAE in iteration no-%d is %f\n", itr, rae);
         itr++;
-        printf("\n");
     } while(rae > e);
 
     printf("\nAfter %d iterations, root = %f\n",itr-1,c);
