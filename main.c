@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <math.h>
 
-float f(float x)
+double f(double x)
 {
     return(pow(1.5, x) - 5);
 }
 
-float main()
+main()
 {
 
-    float a = 10, b = 8, c, e = 0.01, rae;
+    double a = 10, b = 8, c, e = 0.01, rae;
     int itr=1;
 
     do
@@ -18,7 +18,7 @@ float main()
         a=b;
         b=c;
         rae = fabs((b - a) / b);
-        printf("\nIteration no-%d    x = %f\n",itr,c);
+        printf("\nIteration no-%d    x = %f    f(x) = %f\n",itr,c, f(c));
         printf("RAE in iteration no-%d is %f", itr, rae);
         itr++;
         printf("\n");
